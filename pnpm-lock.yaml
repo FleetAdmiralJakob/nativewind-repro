@@ -20,6 +20,9 @@ importers:
       expo-constants:
         specifier: ~16.0.1
         version: 16.0.2(expo@51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
+      expo-image:
+        specifier: ^1.12.15
+        version: 1.12.15(expo@51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       expo-linking:
         specifier: ~6.3.1
         version: 6.3.1(expo@51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
@@ -2381,6 +2384,11 @@ packages:
 
   expo-font@12.0.9:
     resolution: {integrity: sha512-seTCyf0tbgkAnp3ZI9ZfK9QVtURQUgFnuj+GuJ5TSnN0XsOtVe1s2RxTvmMgkfuvfkzcjJ69gyRpsZS1cC8hjw==}
+    peerDependencies:
+      expo: '*'
+
+  expo-image@1.12.15:
+    resolution: {integrity: sha512-rjvnNSaFnrmlugDESTaYJhgdqRLn+M5vu0lD5NGNd2LkxGG5HrRV3gSzeyQQ68XRhrDN8eJvkcKujPKJUTMraw==}
     peerDependencies:
       expo: '*'
 
@@ -8181,6 +8189,10 @@ snapshots:
     dependencies:
       expo: 51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))
       fontfaceobserver: 2.3.0
+
+  expo-image@1.12.15(expo@51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))):
+    dependencies:
+      expo: 51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))
 
   expo-keep-awake@13.0.2(expo@51.0.31(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))):
     dependencies:

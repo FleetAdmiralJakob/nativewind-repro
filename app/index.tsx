@@ -1,18 +1,22 @@
-import { Stack, Link } from 'expo-router';
+import { Image } from "expo-image"
+import { Stack } from 'expo-router';
+import React from "react";
 
-import { Button } from '~/components/Button';
 import { Container } from '~/components/Container';
-import { ScreenContent } from '~/components/ScreenContent';
 
 export default function Home() {
   return (
     <>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
-        <ScreenContent path="app/index.tsx" title="Home" />
-        <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
-          <Button title="Show Details" />
-        </Link>
+        <Image
+          source="https://images.unsplash.com/photo-1719937050601-969f4f25d060?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          className="h-full w-full"
+        />
+        <Image
+          source="https://images.unsplash.com/photo-1719937050601-969f4f25d060?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style={{ width: '10%', height: '10%' }}
+        />
       </Container>
     </>
   );
